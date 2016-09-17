@@ -1,5 +1,7 @@
 <div id='id_header_links'>
     <span id="id_account_buttons_wrap">
+        <a id='id_help_link' href="/documentation/">Help</a>
+        <span class='separator'>|</span>
         {% if user and user.username %}
             <a id='id_account_link' href='{% url 'front_page' %}'>My account</a>
             <span class='separator'>|</span>
@@ -17,7 +19,6 @@
     {% endif %}
 
     <div id='id_top_links'>
-        <a id='id_help_link' href="/documentation/">Help</a>
     </div>
     <script type="text/javascript">
         $(function() {
