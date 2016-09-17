@@ -224,13 +224,13 @@ def page(request, sheet):
 
         context = Context(dict(user=request.user))
         email_text = get_template('welcome_email.txt').render(context)
-        send_mail(
-            'Welcome to Dirigible',
-            email_text,
-            '',
-            [request.user.email],
-            fail_silently=True
-        )
+        # send_mail(
+        #     'Welcome to Dirigible',
+        #     email_text,
+        #     '',
+        #     [request.user.email],
+        #     fail_silently=True
+        # )
     return response
 
 
